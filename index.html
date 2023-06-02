@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Assignment 1 - Javascript</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav class="header">
+      <img src="assets/neuron.png" width="128px" alt="logo" />
+    </nav>
+    <section class="container">
+      <div class="container-img">
+        <img
+          src="assets/background.svg"
+          class="background-img"
+          alt="background"
+        />
+      </div>
+      <div class="container-form">
+        <div class="form-wrapper">
+          <div id="formulir">
+            <div class="form-desc">
+              <img src="assets/neuron3.png" width="112px" alt="logo-neuron" />
+              <h3>Form Rekrutasi</h3>
+              <p>
+                Isi data di bawah sesuai dengan identitas diri anda dan lowongan
+                yang akan anda pilih
+              </p>
+            </div>
+            <form id="form-rekruitasi">
+              <div class="form-group">
+                <label for="fullname" class="form-label">
+                  Fullname
+                  <span>*</span>
+                </label>
+                <input
+                  type="text"
+                  name="fullname"
+                  id="fullname"
+                  class="form-input"
+                  placeholder="Masukkan nama"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="email" class="form-label">
+                  Email
+                  <span>*</span>
+                </label>
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  class="form-input"
+                  placeholder="Masukkan email"
+                />
+              </div>
+              <div class="form-group">
+                <label for="no-telp" class="form-label">
+                  Nomor Telepon
+                  <span>*</span>
+                </label>
+                <input
+                  type="text"
+                  name="no-telp"
+                  id="no-telp"
+                  class="form-input"
+                  placeholder="Masukkan nomor telepon"
+                />
+              </div>
+              <div class="form-group">
+                <label for="lowongan" class="form-label">
+                  Lowongan
+                  <span>*</span>
+                </label>
+                <select name="lowongan" class="form-input" id="lowongan">
+                  <option value="" selected disabled>- Pilih Lowongan -</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="posisi" class="form-label">
+                  Posisi
+                  <span>*</span>
+                </label>
+                <select name="posisi" class="form-input" id="posisi">
+                  <option value="" selected disabled>- Pilih Posisi -</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <button type="submit" class="btn-submit">Kirim</button>
+              </div>
+            </form>
+          </div>
+          <div id="result">
+            <p class="text-success">
+              Terima kasih telah melakukan pengisian, permintaan anda akan
+              segera kami proses.
+            </p>
+            <p id="resultFullname"></p>
+            <p id="resultEmail"></p>
+            <p id="resultPhone"></p>
+            <p id="resultVacancy"></p>
+            <p id="resultPosition"></p>
+          </div>
+          <div class="footer">
+            <div class="brands-logo">
+              <i class="fa-brands fa-square-instagram fa-2xl"></i>
+              <i class="fa-brands fa-youtube fa-2xl"></i>
+              <i class="fa-brands fa-twitter fa-2xl"></i>
+              <i class="fa-brands fa-square-facebook fa-2xl"></i>
+            </div>
+            <a href="www.neuronworks.co.id">www.neuronworks.co.id</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script
+      src="https://kit.fontawesome.com/fab4cc0b72.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
+      integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
