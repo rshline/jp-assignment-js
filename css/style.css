@@ -124,6 +124,18 @@ body {
   font-weight: bold;
 }
 
+.success-info {
+  text-align: center;
+  font-size: 12px;
+  color: green;
+}
+
+.danger-info {
+  text-align: center;
+  font-size: 12px;
+  color: red;
+}
+
 @media screen and (min-width: 1200px) {
   .container-img {
     display: block;
